@@ -1,6 +1,21 @@
 # CO2_Emissions
 An analysis of CO2 emissions by industry, country, year, etc.
 
+## Tools and Technologies
+- **SQL**: Querying and transforming raw data.
+- **Excel**: Summarizing and visualizing results.
+
+## Key Skills Demonstrated
+- Data querying and aggregation with SQL.
+- Data cleaning and preparation for analysis.
+- Deriving actionable insights from raw data.
+- Presentation of results in a clear, concise format.
+
+## Repository Structure
+- **SQL Files**: Located in the root directory and named descriptively.
+- **Results Files**: Corresponding `.csv` files containing query outputs.
+- **Cleaned Dataset**: Processed file ready for analysis.
+
 # Data Cleaning Steps
 
 ### 1. Column Standardization
@@ -29,3 +44,13 @@ An analysis of CO2 emissions by industry, country, year, etc.
 
 ### 7. Final Export
 - Saved the cleaned dataset as `cleaned_co2_emissions_by_sectors.csv`.
+
+## Analysis Reasoning
+
+
+## Project
+### 1. **Yearly Emissions by Region**
+- **SQL Query**: [`Emissions by Region and Year.sql`](./Emissions by Region and Year.sql)
+- **Results**: [`Emissions by Region and Year Results.csv`](./Emissions by Region and Year Results.csv)
+- **Visualization**: ![Visualization](./Emissions by Region and Year Viz.png)
+- **Description**: This 
