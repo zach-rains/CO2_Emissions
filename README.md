@@ -50,7 +50,7 @@ An analysis of CO2 emissions by industry, country, year, etc.
 
 ## Project
 ### 1. **Yearly Emissions by Region**
-- **SQL Query**: [`Emissions by Region and Year.sql`](Emissions by Region and Year.sql)
+- **SQL Query**: [`Emissions by Region and Year.sql`]([Emissions by Region and Year.sql](https://github.com/zach-rains/CO2_Emissions/blob/3f9737620acf8e23977087dc6be377a54d4fdf42/Emissions%20by%20Region%20and%20Year%20Results.csv))
 - **Results**: [`Emissions by Region and Year Results.csv`](./Emissions by Region and Year Results.csv)
 - **Visualization**: ![Visualization](./Emissions by Region and Year Viz.png)
 - **Description**: This 
