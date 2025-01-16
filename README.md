@@ -48,9 +48,15 @@ An analysis of CO2 emissions by industry, country, year, etc.
 ## Analysis Reasoning
 
 
-## Project
+# Project
 ### 1. **Yearly Emissions by Region**
 - **SQL Query**: [Emissions by Region and Year](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year.sql)
 - **Results**: [Emissions by Region and Year](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year%20Results.csv)
 - **Visualization**: ![Visualization](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year%20Viz.png)
 - **Description**: This query was designed to analyze the emissions data by region and year to identify trends in emissions over time. Overall, not much has changed year over year, regions will often have a good year or two with lower emissions and then return to higher emissions the very next year.
+
+### 2. **Renewable Energy Percentage**
+- **SQL Query**: 
+- **Results**: 
+- **Visualization**: 
+- **Description**: 
