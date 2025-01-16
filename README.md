@@ -50,13 +50,13 @@ An analysis of CO2 emissions by industry, country, year, etc.
 
 # Project
 ### 1. **Yearly Emissions by Region**
-- **SQL Query**: ![Emissions by Region and Year Query](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year.sql)
+- **SQL Query**: [Emissions by Region and Year Query](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year.sql)
 - **Results**: [Emissions by Region and Year Results](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year%20Results.csv)
 - **Visualization**: ![Visualization](https://github.com/zach-rains/CO2_Emissions/blob/c54e445f998e8a3ee336ffeff86fb5ffbbc14f67/Emissions%20by%20Region%20and%20Year%20Viz.png)
 - **Description**: This query was designed to analyze the emissions data by region and year to identify trends in emissions over time. Overall, not much has changed year over year, regions will often have a good year or two with lower emissions and then return to higher emissions the very next year.
 
 ### 2. **Renewable Energy Percentage**
-- **SQL Query**: ![Renewable Energy as a Percentage of Total Production Query](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage.sql)
+- **SQL Query**: [Renewable Energy as a Percentage of Total Production Query](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage.sql)
 - **Results**: [Renewable Energy as a Percentage of Total Production Results](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Results.csv)
 - **Visualization**: ![Renewable Energy by Region](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Viz.png)
 - **Visualization**: ![Global Renewable Energy](https://github.com/zach-rains/CO2_Emissions/blob/2813fe84d952791b51f1a5ac3345f3bfc0121d50/Global%20Renewable%20Energy%20Share.png)
