@@ -68,20 +68,62 @@ ORDER BY
 - **Description**: This query was designed to analyze the emissions data by region and year to identify trends in emissions over time. Overall, not much has changed year over year, regions will often have a good year or two with lower emissions and then return to higher emissions the very next year.
 
 ### 2. **Renewable Energy Percentage**
-- **SQL Query**: [Renewable Energy as a Percentage of Total Production Query](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage.sql)
+- **SQL Query**:
+```sql
+SELECT 
+    region,
+    year,
+    ROUND(SUM(renewable_energy_percentage * energy_consumption_twh / 100),2) AS renewable_energy_twh,
+    ROUND(SUM(energy_consumption_twh),2) AS total_energy_twh,
+    ROUND((SUM(renewable_energy_percentage * energy_consumption_twh / 100) / SUM(energy_consumption_twh)),2) * 100 AS renewable_energy_percentage
+FROM 
+    co2_data
+GROUP BY 
+    region, year
+ORDER BY 
+    year, region;
+```
 - **Results**: [Renewable Energy as a Percentage of Total Production Results](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Results.csv)
 - **Visualization 1**: ![Renewable Energy by Region](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Viz.png)
 - **Visualization 2**: ![Global Renewable Energy](https://github.com/zach-rains/CO2_Emissions/blob/2813fe84d952791b51f1a5ac3345f3bfc0121d50/Global%20Renewable%20Energy%20Share.png)
 - **Description**: This query was designed to take a look at the change in renewable energy production over time by region. It's evident from this data that most regions have been getting between 45-55% of their energy production from renewable resources since the year 2000.
 
 ### 3. **Emissions by Sector and Region**
-- **SQL Query**: [Total Emissions by Sector and Region Query](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region.sql)
+- **SQL Query**:
+```sql
+SELECT 
+    region,
+    ROUND(SUM(automobile_co2_emissions_metrictons),2) AS automobile_emissions,
+    ROUND(SUM(industrial_co2_emissions_metrictons),2) AS industrial_emissions,
+    ROUND(SUM(agriculture_co2_emissions_metrictons),2) AS agriculture_emissions,
+    ROUND(SUM(domestic_co2_emissions_metrictons),2) AS domestic_emissions,
+	ROUND(SUM(automobile_co2_emissions_metrictons + industrial_co2_emissions_metrictons + agriculture_co2_emissions_metrictons + domestic_co2_emissions_metrictons),2) AS total_emissions
+
+FROM 
+    co2_data
+GROUP BY 
+    region
+ORDER BY 
+    total_emissions DESC;
+```
 - **Results**: [Total Emissions by Sector and Region Results](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.csv)
 - **Visualization**: ![Total Emissions by Sector and Region](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.png)
 - **Description**: This query takes a look at the total emissions since the year 2000 by region and then further breaks it down by region for comparison's sake. A couple things stand out immediately: the largest emitter by sector is industry, and second is automobiles.
 
 ### 4. **Industrial Emissions by Sub-Sector and Year**
-- **SQL Query**: [Industrial Emissions by Sub-Sector and Year Query](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year.sql)
+- **SQL Query**:
+```sql
+SELECT
+	year,
+	industry_type,
+    ROUND(SUM(industrial_co2_emissions_metrictons),2) AS total_industrial_emissions
+FROM 
+    co2_data
+GROUP BY 
+	year, industry_type
+ORDER BY 
+    year, industry_type;
+```
 - **Results**: [Industrial Emissions by Sub-Sector and Year Results](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Results.csv)
 - **Visualization**: ![Industrial Emissions by Sub-Sector and Year](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Viz.png)
 - **Description**: This query is looking at which sub-sectors of the industrial sector have the highest emissions and might be areas to address. Upon seeing the reesults of the query, there's no discernable difference between sub-sectors, with all areas having large fluctuations up and down throughout the years. No on sub-sector is standing out as the most polluting area.
