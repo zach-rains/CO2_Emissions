@@ -69,7 +69,7 @@ An analysis of CO2 emissions by industry, country, year, etc.
 - **Description**: This query takes a look at the total emissions since the year 2000 by region and then further breaks it down by region for comparison's sake. A couple things stand out immediately: the largest emitter by sector is industry, and second is automobiles.
 
 ### 4. **Industrial Emissions by Sub-Sector and Year**
-- **SQL Query**:[Industrial Emissions by Sub-Sector and Year Query](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year.sql)
+- **SQL Query**: [Industrial Emissions by Sub-Sector and Year Query](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year.sql)
 - **Results**: [Industrial Emissions by Sub-Sector and Year Results](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Results.csv)
-- **Visualization**:![Industrial Emissions by Sub-Sector and Year](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Viz.png)
+- **Visualization**: ![Industrial Emissions by Sub-Sector and Year](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Viz.png)
 - **Description**: This query is looking at which sub-sectors of the industrial sector have the highest emissions and might be areas to address. Upon seeing the reesults of the query, there's no discernable difference between sub-sectors, with all areas having large fluctuations up and down throughout the years. No on sub-sector is standing out as the most polluting area.
