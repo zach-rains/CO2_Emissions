@@ -58,6 +58,12 @@ An analysis of CO2 emissions by industry, country, year, etc.
 ### 2. **Renewable Energy Percentage**
 - **SQL Query**: [Renewable Energy as a Percentage of Total Production Query](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage.sql)
 - **Results**: [Renewable Energy as a Percentage of Total Production Results](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Results.csv)
-- **Visualization**: ![Renewable Energy by Region](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Viz.png)
-- **Visualization**: ![Global Renewable Energy](https://github.com/zach-rains/CO2_Emissions/blob/2813fe84d952791b51f1a5ac3345f3bfc0121d50/Global%20Renewable%20Energy%20Share.png)
+- **Visualization 1**: ![Renewable Energy by Region](https://github.com/zach-rains/CO2_Emissions/blob/54fb4de3bd9ace6e889ec2420a6b63683f689489/Renewable%20Energy%20Percentage%20Viz.png)
+- **Visualization 2**: ![Global Renewable Energy](https://github.com/zach-rains/CO2_Emissions/blob/2813fe84d952791b51f1a5ac3345f3bfc0121d50/Global%20Renewable%20Energy%20Share.png)
 - **Description**: This query was designed to take a look at the change in renewable energy production over time by region. It's evident from this data that most regions have been getting between 45-55% of their energy production from renewable resources since the year 2000.
+
+### 3. **Emissions by Sector and Region**
+- **SQL Query**: [Total Emissions by Sector and Region](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region.sql)
+- **Results**: [Total Emissions by Sector and Region Results](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.csv)
+- **Visualization**: ![Total Emissions by Sector and Region(https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.png)
+- **Description**: This query takes a look at the total emissions since the year 2000 by region and then further breaks it down by region for comparison's sake. A couple things stand out immediately: the largest emitter by sector is industry, and second is automobiles.
