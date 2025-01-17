@@ -65,5 +65,5 @@ An analysis of CO2 emissions by industry, country, year, etc.
 ### 3. **Emissions by Sector and Region**
 - **SQL Query**: [Total Emissions by Sector and Region](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region.sql)
 - **Results**: [Total Emissions by Sector and Region Results](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.csv)
-- **Visualization**: ![Total Emissions by Sector and Region(https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.png)
+- **Visualization**: ![Total Emissions by Sector and Region](https://github.com/zach-rains/CO2_Emissions/blob/d30ccbc88623f948907d69239e7de0f32c406ce5/Total%20Emissions%20by%20Sector%20and%20Region%20Results.png)
 - **Description**: This query takes a look at the total emissions since the year 2000 by region and then further breaks it down by region for comparison's sake. A couple things stand out immediately: the largest emitter by sector is industry, and second is automobiles.
