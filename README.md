@@ -46,7 +46,9 @@ An analysis of CO2 emissions by industry, country, year, etc.
 - Saved the cleaned dataset as `cleaned_co2_emissions_by_sectors.csv`.
 
 ## Analysis Reasoning
-
+- Climate change is one of the biggest issues humanity is facing, and I wanted to explore the factors playing a role in CO2 emissions around the world.
+- I wanted to look at emissions broken down by region, country, industry and sub-sectors.
+- Additionally, I wanted to take a look at how a country's economy impacts it's emissions as well as its energy consumption.
 
 # Project
 ### 1. **Yearly Emissions by Region**
