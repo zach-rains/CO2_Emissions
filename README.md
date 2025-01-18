@@ -127,3 +127,19 @@ ORDER BY
 - **Results**: [Industrial Emissions by Sub-Sector and Year Results](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Results.csv)
 - **Visualization**: ![Industrial Emissions by Sub-Sector and Year](https://github.com/zach-rains/CO2_Emissions/blob/4582a8edb66f869902711e7f6e670a7438a58ff8/Industrial%20Emissions%20by%20Sector%20and%20Year%20Viz.png)
 - **Description**: This query is looking at which sub-sectors of the industrial sector have the highest emissions and might be areas to address. Upon seeing the reesults of the query, there's no discernable difference between sub-sectors, with all areas having large fluctuations up and down throughout the years. No on sub-sector is standing out as the most polluting area.
+
+### 5. **GDP per TWH**
+- **SQL Query**:
+```sql
+SELECT 
+    country,
+    SUM(gdp_billion_usd) / SUM(energy_consumption_twh) AS gdp_per_twh
+FROM 
+    co2_data
+GROUP BY 
+    country
+ORDER BY 
+    gdp_per_twh DESC;
+```
+- **Results**: ![GDP per TWH Results](https://github.com/zach-rains/CO2_Emissions/blob/943c5c8d98ab0021bdc246d1a8bd3b417cd9109a/GDP%20per%20TWH%20Results.csv)- **Visualization**: 
+- **Description**: This query explores a country's energy consumption vs their total GDP as gdp_per_twh. A higher gdp_per_twh indicates that a country generates more GDP for each unit of energy it consumes. This suggests higher energy efficiency in economic terms, meaning the country uses less energy relative to the economic value it produces.
