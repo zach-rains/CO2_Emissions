@@ -142,5 +142,5 @@ ORDER BY
     gdp_per_twh DESC;
 ```
 - **Results**: [GDP per TWH Results](https://github.com/zach-rains/CO2_Emissions/blob/2d9e37baa03d7da63fa52c4475ecc47f9ec900d7/GDP%20per%20TWH%20Results.csv)
-- **Visualization**: ![GDP per TWH Results](https://github.com/zach-rains/CO2_Emissions/blob/943c5c8d98ab0021bdc246d1a8bd3b417cd9109a/GDP%20per%20TWH%20Results.csv)
+- **Visualization**: ![GDP per TWH](https://github.com/zach-rains/CO2_Emissions/blob/0f1afabe20c04f7b836925b0103e9373beb8bb2a/GDP%20per%20TWH%20Viz.png)
 - **Description**: This query explores a country's energy consumption vs their total GDP as gdp_per_twh. A higher gdp_per_twh indicates that a country generates more GDP for each unit of energy it consumes. This suggests higher energy efficiency in economic terms, meaning the country uses less energy relative to the economic value it produces.
